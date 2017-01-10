@@ -12,11 +12,11 @@
 </Reference>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>8eGphbEf22+116NuFzSKSRl+idQCBmCD9Ye+5IndRIg=</DigestValue>
+<DigestValue>qsuEoKqbl2LyofcWTVdVfz7OYUmBacZbGtiYvySMiNA=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>ZSfG+go8Gc8JOcTfEqn/Rsg4qDOyZhvmMCEbgd5rHt0=</DigestValue>
+<DigestValue>9ZsDxw24/iXheHUwIjwOYEC8xwZFuiZ8jZzJfebBxdY=</DigestValue>
 </Reference>
 <Reference URI="css%2Fmobile-angular-ui-base.min.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -24,7 +24,7 @@
 </Reference>
 <Reference URI="css%2Fstyle.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>pj7PY9O6/eiy29BbGUBzjN9oYb5J9euIwvFKBFxTIcE=</DigestValue>
+<DigestValue>DH8Xsk7LfeYHD1v67FqJruRStQGXhCHR3RovY8qdvvE=</DigestValue>
 </Reference>
 <Reference URI="fonts%2Ffontawesome-webfont.eot">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -46,29 +46,29 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>faz4P1EXnejXmApRPmerOgjyxicrtZRt+P13wNF2O3M=</DigestValue>
 </Reference>
+<Reference URI="football_117.png">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>ercePb005/vzWHyohvw57XcgIXkvpCBQtHO0cy4Wago=</DigestValue>
+</Reference>
 <Reference URI="home.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>RY+d/4R5oNO3zP+c7IuYL/b5rrQ+9t4SM0hJPAOr62s=</DigestValue>
+<DigestValue>BUQ0jlat7p/2czsrnPkJrh1emtyb2SJTfD4F76phhIg=</DigestValue>
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>L4+7ev/ECjDAGgN1rtV07BPj4fmpxBc5x3pCaU3XQPg=</DigestValue>
+<DigestValue>3il+PC+stxws+KR5Jrp2X49zZtu3LK7apgeu/Ojqx1I=</DigestValue>
 </Reference>
 <Reference URI="js%2Fapp.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>J0qfV+QkxDr8L5Cqv6jkqzqGL2KIsaPs0kOvbj8C9lE=</DigestValue>
+<DigestValue>wpMYntEB+5PBgTcVNAToyNxONZ7YLdqsnDtHITpZ+Iw=</DigestValue>
 </Reference>
-<Reference URI="js%2Fcontrollers%2Fserie-a-controller.js">
+<Reference URI="js%2Fcontrollers%2Fstandings-controller.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>cdW10fb0OjB4Pu1hSi0ZM4d90pJQWoLSW/9DO+KOf0g=</DigestValue>
+<DigestValue>lKrEQ3m7AMpovZ0HLUgMJE32RhokfMI7pERsQ4BUF4g=</DigestValue>
 </Reference>
 <Reference URI="js%2Fservices%2Fdata-service.service.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>txdRbrbhddYvaO/FlxDYXYjbfWsUaaFw1q5oOXlg5p4=</DigestValue>
-</Reference>
-<Reference URI="logo_117x117.png">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>S7O8CeaFE3bo3g7MoneOsP24dpqKgR6swPpCI3V0KsE=</DigestValue>
+<DigestValue>9FreMwDNDl3EgFK1As12rqRDM1R/FrYiCaNNFpxJsKA=</DigestValue>
 </Reference>
 <Reference URI="mobile-angular-ui_license.md">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -104,7 +104,11 @@
 </Reference>
 <Reference URI="sidebar.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>UYYJr4TwjwXq4b70V534QFkvVrK8WFTvY3pkgwC9PTw=</DigestValue>
+<DigestValue>fEO1uRyVZjWThC3L3rh2CZ1g9voE6fjGd4WVNoIOnQ8=</DigestValue>
+</Reference>
+<Reference URI="standings.html">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>qXq6BSXhxo63brfX8oWKKqWJrf6+FkncrXD6IDA7M7U=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -115,9 +119,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-ffmSfMrGV0X9XFEoIcxq1JKjGY/PBeldOSguzl6bS+h0HzpKjTBiSHxFju7oyVaGVyPdD83FU8ft
-0odSS2622pzp382MbVTfmU4ekpi72LHn3XqxBSsfT/aRr7WhLpEuibA9tWMpgLmj9UEiF61JRJUg
-3hUl5e4VgxlrfJpajiY=
+o6N5HTDWVuLeOvgXHY9rNHXPVivqoEHQpL/koKZ3CWbQ2Pcbh2Qmc07QxMVm4dqYoym13P98u8zb
+BFQkc6h7LM/ckJpF5nfXnPmH++WfBYEMYYEA7+CDoQYQvoN2tU5HXv9Q7bkSdmFAjw+YlIwBBocO
+g15UrQPdf+GKVmyIsh8=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

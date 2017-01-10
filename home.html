@@ -1,31 +1,5 @@
-<div class="scrollable">
-	<div class="scrollable-content">
-	 <h3>Standings for {{currentSeason}}</h1>
-		<table class="table table-stripped">
-			<thead>
-				<tr>
-					<th>#</th>
-					<th>Team</th>
-					<th>P</th>
-					<th>W</th>
-					<th>D</th>
-					<th>L</th>
-					<th>GD</th>
-					<th>P</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr ng-repeat="team in scoreData" id="{{team.color}}">
-					<td>{{ team.position }}</td>
-					<td>{{ team.team }}</td>
-					<td>{{ team.overall.matches_played }}</td>
-					<td>{{ team.overall.wins }}</td>
-					<td>{{ team.overall.draws }}</td>
-					<td>{{ team.overall.losts }}</td>
-					<td>{{ team.overall.goal_difference }}</td>
-					<td>{{ team.overall.points }}</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+Please choose your league/country:
+ <div class="list-group">
+      <a ng-repeat="league in leagues" class="list-group-item"
+       href="#/standings" ng-click="getLeague(league)">{{league.name}} / {{league.country}}</a>
 </div>

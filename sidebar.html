@@ -1,25 +1,10 @@
 <div class="scrollable">
   <h1 class="scrollable-header app-name">Designed by Lirola Luis</h1>
   <div class="scrollable-content">
-    <span class="years-label">Years:</span>
+    <span class="years-label">Leagues:</span>
     <div class="list-group" ui-turn-off="uiSidebarLeft">
-      <a class="list-group-item" ng-class="{'active-season' : currentSeason=='16-17'}" href="#/" ng-click="getSeason('16-17')">2016/2017 <i class="fa fa-chevron-right pull-right"></i></a>
-      <a class="list-group-item" ng-class="{'active-season' : currentSeason=='15-16'}" href="#/" ng-click="getSeason('15-16')">2015/2016 <i class="fa fa-chevron-right pull-right"></i></a>
-      <a class="list-group-item" ng-class="{'active-season' : currentSeason=='14-15'}" href="#/" ng-click="getSeason('14-15')">2014/2015 <i class="fa fa-chevron-right pull-right"></i></a>
-      <a class="list-group-item" ng-class="{'active-season' : currentSeason=='13-14'}" href="#/" ng-click="getSeason('13-14')">2013/2014 <i class="fa fa-chevron-right pull-right"></i></a>
-      <a class="list-group-item" ng-class="{'active-season' : currentSeason=='12-13'}" href="#/" ng-click="getSeason('12-13')">2012/2013 <i class="fa fa-chevron-right pull-right"></i></a>
-      <a class="list-group-item" ng-class="{'active-season' : currentSeason=='11-12'}" href="#/" ng-click="getSeason('11-12')">2011/2012 <i class="fa fa-chevron-right pull-right"></i></a>
-      <a class="list-group-item" ng-class="{'active-season' : currentSeason=='10-11'}" href="#/" ng-click="getSeason('10-11')">2010/2011 <i class="fa fa-chevron-right pull-right"></i></a>
-      <a class="list-group-item" ng-class="{'active-season' : currentSeason=='09-10'}" href="#/" ng-click="getSeason('09-10')">2009/2010 <i class="fa fa-chevron-right pull-right"></i></a>
-      <a class="list-group-item" ng-class="{'active-season' : currentSeason=='08-09'}" href="#/" ng-click="getSeason('08-09')">2008/2009 <i class="fa fa-chevron-right pull-right"></i></a>
-      <a class="list-group-item" ng-class="{'active-season' : currentSeason=='07-08'}" href="#/" ng-click="getSeason('07-08')">2007/2008 <i class="fa fa-chevron-right pull-right"></i></a>
-      <a class="list-group-item" ng-class="{'active-season' : currentSeason=='06-07'}" href="#/" ng-click="getSeason('06-07')">2006/2007 <i class="fa fa-chevron-right pull-right"></i></a>
-      <a class="list-group-item" ng-class="{'active-season' : currentSeason=='05-06'}" href="#/" ng-click="getSeason('05-06')">2005/2006 <i class="fa fa-chevron-right pull-right"></i></a>
-      <a class="list-group-item" ng-class="{'active-season' : currentSeason=='04-05'}" href="#/" ng-click="getSeason('04-05')">2004/2005 <i class="fa fa-chevron-right pull-right"></i></a>
-      <a class="list-group-item" ng-class="{'active-season' : currentSeason=='03-04'}" href="#/" ng-click="getSeason('03-04')">2003/2004 <i class="fa fa-chevron-right pull-right"></i></a>
-      <a class="list-group-item" ng-class="{'active-season' : currentSeason=='02-03'}" href="#/" ng-click="getSeason('02-03')">2002/2003 <i class="fa fa-chevron-right pull-right"></i></a>
-      <a class="list-group-item" ng-class="{'active-season' : currentSeason=='01-02'}" href="#/" ng-click="getSeason('01-02')">2001/2002 <i class="fa fa-chevron-right pull-right"></i></a>
-      <a class="list-group-item" ng-class="{'active-season' : currentSeason=='00-01'}" href="#/" ng-click="getSeason('00-01')">2000/2001 <i class="fa fa-chevron-right pull-right"></i></a>
+      <a ng-repeat="league in leagues" class="list-group-item menu-items" ng-class="{'active-league' : league.name == currentLeague.name}"
+       href="#/standings" ng-click="getLeague(league)">{{league.name}} - {{league.country}}<i class="fa fa-chevron-right pull-right"></i></a>
     </div>
   </div>
 </div>

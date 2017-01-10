@@ -15,8 +15,6 @@ html body {
      padding:5;
 }
 
-
-
 #green{
 	background-color: #94F694;
 }
@@ -87,12 +85,13 @@ input.scrollable-header {
 	background-color:#191926!important;
 }
 
-.list-group-item{
+.menu-items{
 	background-color:#191926!important;
 	border-bottom:none!important;
+	color: white!important;
 }
 
-.active-season{
+.active-league{
 	background-color:#007AFF!important;
 }
 

@@ -1,0 +1,34 @@
+<div class="scrollable">
+	<div class="scrollable-content">
+		<h3>Standings in {{currentLeague.name}} for current season</h3>
+		<span ng-if="scoreData.length == 0"> 
+		Sorry. This league currently not available! 
+		</span>
+		<table ng-if="scoreData.length != 0" class="table table-stripped">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Team</th>
+					<th>P</th>
+					<th>W</th>
+					<th>D</th>
+					<th>L</th>
+					<th>GD</th>
+					<th>P</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="team in scoreData" id="{{team.color}}">
+					<td>{{ team.position }}</td>
+					<td>{{ team.team }}</td>
+					<td>{{ team.overall.matches_played }}</td>
+					<td>{{ team.overall.wins }}</td>
+					<td>{{ team.overall.draws }}</td>
+					<td>{{ team.overall.losts }}</td>
+					<td>{{ team.overall.goal_difference }}</td>
+					<td>{{ team.overall.points }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
