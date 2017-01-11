@@ -12,11 +12,11 @@
 </Reference>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>qsuEoKqbl2LyofcWTVdVfz7OYUmBacZbGtiYvySMiNA=</DigestValue>
+<DigestValue>9FnNyyzve0pjeKv8KfDhbxamHY67E591s13umbQJZPE=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>9ZsDxw24/iXheHUwIjwOYEC8xwZFuiZ8jZzJfebBxdY=</DigestValue>
+<DigestValue>iWQXmjYPtL4V4zn0naI3YZQVyN9vwNDXWGiyAOP8nEA=</DigestValue>
 </Reference>
 <Reference URI="css%2Fmobile-angular-ui-base.min.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -52,7 +52,7 @@
 </Reference>
 <Reference URI="home.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>BUQ0jlat7p/2czsrnPkJrh1emtyb2SJTfD4F76phhIg=</DigestValue>
+<DigestValue>4ce9RvqjS6S1+2W4iPuZYV3VAV2qnkpXL69ZZDqKDaI=</DigestValue>
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -60,11 +60,11 @@
 </Reference>
 <Reference URI="js%2Fapp.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>wpMYntEB+5PBgTcVNAToyNxONZ7YLdqsnDtHITpZ+Iw=</DigestValue>
+<DigestValue>L+05KZ+wJq4kehVB09HFeT2q6WAKAkiA5zPBSu836Iw=</DigestValue>
 </Reference>
 <Reference URI="js%2Fcontrollers%2Fstandings-controller.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>lKrEQ3m7AMpovZ0HLUgMJE32RhokfMI7pERsQ4BUF4g=</DigestValue>
+<DigestValue>ZBtn0TCGj0O2IRfR1Zf4KBpIu3K2ki/yXYXnYbm5Qws=</DigestValue>
 </Reference>
 <Reference URI="js%2Fservices%2Fdata-service.service.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -104,11 +104,15 @@
 </Reference>
 <Reference URI="sidebar.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>fEO1uRyVZjWThC3L3rh2CZ1g9voE6fjGd4WVNoIOnQ8=</DigestValue>
+<DigestValue>bMGW4dsLKmn6gZ0icQJhgGJPGha8vJxoDzA8U6SowgA=</DigestValue>
 </Reference>
 <Reference URI="standings.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>qXq6BSXhxo63brfX8oWKKqWJrf6+FkncrXD6IDA7M7U=</DigestValue>
+<DigestValue>Ar0nnuwPoXhTjqueDL1DpD8v/fA4SfpCtlhn/HmyIZ0=</DigestValue>
+</Reference>
+<Reference URI="teams.html">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>NYZOKolMjhER/fOUlnpePFg0nf7yDpa9leBKfLrfLOc=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -119,9 +123,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-o6N5HTDWVuLeOvgXHY9rNHXPVivqoEHQpL/koKZ3CWbQ2Pcbh2Qmc07QxMVm4dqYoym13P98u8zb
-BFQkc6h7LM/ckJpF5nfXnPmH++WfBYEMYYEA7+CDoQYQvoN2tU5HXv9Q7bkSdmFAjw+YlIwBBocO
-g15UrQPdf+GKVmyIsh8=
+anUT2zT16V2II0lTNsQla2s1sQOR5XLGPt5ufHfgqfDUb6JrZaJer2Pf0YvJFG/abOdnetH/xCvN
+SNyyjuLoSFHw6hPNT1mzHeRjzVwuL2Bc0C27WV5VPrwJGoNnrzU78bxwZ+iCYX50mG63QS+PcPvv
+U7fF1Uvz+GNxC2KVDi4=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

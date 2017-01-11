@@ -9,4 +9,5 @@ app.run(function($transform) {
 app.config(function($routeProvider) {
 	$routeProvider.when('/', {templateUrl: 'home.html', reloadOnSearch: false});
 	$routeProvider.when('/standings', {templateUrl: 'standings.html', reloadOnSearch: false});
+	$routeProvider.when('/teams', {templateUrl: 'teams.html', reloadOnSearch: false});
 });

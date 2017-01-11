@@ -2,9 +2,27 @@
   <h1 class="scrollable-header app-name">Designed by Lirola Luis</h1>
   <div class="scrollable-content">
     <span class="years-label">Leagues:</span>
-    <div class="list-group" ui-turn-off="uiSidebarLeft">
-      <a ng-repeat="league in leagues" class="list-group-item menu-items" ng-class="{'active-league' : league.name == currentLeague.name}"
-       href="#/standings" ng-click="getLeague(league)">{{league.name}} - {{league.country}}<i class="fa fa-chevron-right pull-right"></i></a>
-    </div>
+    <div class="panel-group" 
+        ui-shared-state="myAccordion">
+    <div class="panel menu-items" ng-class="{'active-league' : league.name == currentLeague.name}" ng-repeat="league in leagues">
+          <div class="panel-heading" ui-set="{'myAccordion': league.id}">
+        
+            <h4 class="panel-title">
+               {{league.name}}
+            </h4>
+          </div>
+
+          <div ui-if="myAccordion == {{league.id}}">
+            <div class="panel-body">
+            <a href="#/teams" class="btn btn-default" ng-click="getLeagueTeams(league)">
+    			Teams
+			</a>
+			<a href="#/standings" class="btn btn-success" ng-click="getLeagueStandings(league)">
+    			Standings
+			</a>
+            </div>
+          </div>
+        </div>
+     </div>
   </div>
 </div>

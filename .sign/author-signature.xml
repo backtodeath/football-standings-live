@@ -12,7 +12,7 @@
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>9ZsDxw24/iXheHUwIjwOYEC8xwZFuiZ8jZzJfebBxdY=</DigestValue>
+<DigestValue>iWQXmjYPtL4V4zn0naI3YZQVyN9vwNDXWGiyAOP8nEA=</DigestValue>
 </Reference>
 <Reference URI="css%2Fmobile-angular-ui-base.min.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -48,7 +48,7 @@
 </Reference>
 <Reference URI="home.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>BUQ0jlat7p/2czsrnPkJrh1emtyb2SJTfD4F76phhIg=</DigestValue>
+<DigestValue>4ce9RvqjS6S1+2W4iPuZYV3VAV2qnkpXL69ZZDqKDaI=</DigestValue>
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -56,11 +56,11 @@
 </Reference>
 <Reference URI="js%2Fapp.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>wpMYntEB+5PBgTcVNAToyNxONZ7YLdqsnDtHITpZ+Iw=</DigestValue>
+<DigestValue>L+05KZ+wJq4kehVB09HFeT2q6WAKAkiA5zPBSu836Iw=</DigestValue>
 </Reference>
 <Reference URI="js%2Fcontrollers%2Fstandings-controller.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>lKrEQ3m7AMpovZ0HLUgMJE32RhokfMI7pERsQ4BUF4g=</DigestValue>
+<DigestValue>ZBtn0TCGj0O2IRfR1Zf4KBpIu3K2ki/yXYXnYbm5Qws=</DigestValue>
 </Reference>
 <Reference URI="js%2Fservices%2Fdata-service.service.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -100,11 +100,15 @@
 </Reference>
 <Reference URI="sidebar.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>fEO1uRyVZjWThC3L3rh2CZ1g9voE6fjGd4WVNoIOnQ8=</DigestValue>
+<DigestValue>bMGW4dsLKmn6gZ0icQJhgGJPGha8vJxoDzA8U6SowgA=</DigestValue>
 </Reference>
 <Reference URI="standings.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>qXq6BSXhxo63brfX8oWKKqWJrf6+FkncrXD6IDA7M7U=</DigestValue>
+<DigestValue>Ar0nnuwPoXhTjqueDL1DpD8v/fA4SfpCtlhn/HmyIZ0=</DigestValue>
+</Reference>
+<Reference URI="teams.html">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>NYZOKolMjhER/fOUlnpePFg0nf7yDpa9leBKfLrfLOc=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -115,9 +119,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-K/MB57gsOjDkA2F1+YY1/NEv8v/FnX/lokRToa9LMftp4WLUO+s33Ge/siEboHCVybfZD6Imf4Tl
-ZES+rVHDz01WSieqVLJxr+X23ITtcmrroXfXRnqdEMlWEI/D8s2nV8Haj78vuO22XaSQkTdVVYQc
-OQq4NpkfVmBLkKMZXco=
+HWe1dU6Z9G5QdGXrgSv2Gtc3svpU74zD1Ahq3B8PyF/vvoHbE9fRYv5zxq98gUrDlCA6m54KplrQ
+CMP8INdHY3AYiddkE1uCEIH3Jxg5T5/JHK1Xuu7ttZbXvIuoznsL1axgVTz8fHSitMgmrI7TFYlL
+yAjn9dkQhemxNVDFyCI=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

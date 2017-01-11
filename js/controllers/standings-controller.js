@@ -20,9 +20,9 @@
 		    
 	    document.addEventListener( 'tizenhwkey', buttonEvent );
 	    
-	    var listOfLeagues = 'http://soccer.sportsopendata.net/v1/leagues';
+	    var listOfLeagues = 'http://api.football-data.org/v1/competitions';
+	    var apiKey = {'X-Auth-Token': '8b096ed4da8e4dd0a9408ad7d2705022'}
 		
-		var SCORES_SERVICE_URL = 'http://soccer.sportsopendata.net/v1/leagues/serie-a/seasons/16-17/standings';
 		var refreshTimeDelay = 1000;
 		var continousLoad;
 		// User agent displayed in home page
@@ -39,19 +39,18 @@
 	
 		var status = false;
 		isInternet();
-
-		$scope.getLeague = function(league) {
-			$scope.currentLeague = league;
-			getLeagueStandings(league.id);
-		}
 		
 		var getLeagueStandingsUrl = function(leagueId){
-			return 'http://soccer.sportsopendata.net/v1/leagues/'+ leagueId +'/seasons/16-17/standings';
+			return 'http://api.football-data.org/v1/competitions/'+ leagueId +'/leagueTable';
+		}
+		
+		var getLeagueTeamsUrl = function(leagueId){
+			return 'http://api.football-data.org/v1/competitions/'+ leagueId +'/teams';
 		}
 	
 		function isInternet() {
 			dataService
-					.getData('http://soccer.sportsopendata.net')
+					.getData('http://api.football-data.org')
 					.then(
 							function(dataResponse) {
 								if (dataResponse.status >= 200
@@ -80,12 +79,13 @@
 		function getLeagues(){
 			$http({
 				method : "GET",
-				url : listOfLeagues
+				url : listOfLeagues,
+				headers: apiKey
 			})
 					.then(
 							function mySucces(response) {
-								var data = response.data.data;
-								$scope.leagues = parseLeagues(response.data.data.leagues);
+								var data = response.data;
+								$scope.leagues = parseLeagues(response.data);
 								$scope.netConnectivity = 0; // CONNECTED!
 							},
 							function myError(response) {
@@ -95,19 +95,21 @@
 								$scope.netConnectivity = 1; // CONNECTION
 								// ERROR
 								continousLoad = setTimeout(
-										loadData,
+										getLeagues,
 										refreshTimeDelay);
 							});
 		}
 		
-		function getLeagueStandings(leagueId){
+		$scope.getLeagueStandings = function(league){
+			$scope.currentLeague = league;
 			$http({
 				method : "GET",
-				url : getLeagueStandingsUrl(leagueId)
+				url : getLeagueStandingsUrl(league.id),
+				headers: apiKey
 			})
 					.then(
 							function mySucces(response) {
-								var data = response.data.data.standings;
+								var data = response.data.standing;
 								$scope.scoreData = parseData(data);
 								$localStorage.scData = $scope.scoreData;
 								$scope.netConnectivity = 0; // CONNECTED!
@@ -119,7 +121,32 @@
 								$scope.netConnectivity = 1; // CONNECTION
 								// ERROR
 								continousLoad = setTimeout(
-										loadData,
+										getLeagues,
+										refreshTimeDelay);
+							});
+		}
+		
+		$scope.getLeagueTeams = function(league){
+			$scope.currentLeague = league;
+			$http({
+				method : "GET",
+				url : getLeagueTeamsUrl(league.id),
+				headers: apiKey
+			})
+					.then(
+							function mySucces(response) {
+								var data = response.data.teams;
+								$scope.teamData = parseTeamsData(data);
+								$scope.netConnectivity = 0; // CONNECTED!
+							},
+							function myError(response) {
+								console
+										.log("ERROR STATUS = "
+												+ response.statusText);
+								$scope.netConnectivity = 1; // CONNECTION
+								// ERROR
+								continousLoad = setTimeout(
+										getLeagues,
 										refreshTimeDelay);
 							});
 		}
@@ -127,11 +154,11 @@
 		function parseLeagues(data) {
 			var leagues = [];
 			angular.forEach(data, function(league) {
-				if (!league.cup && league.level == 1) {
+				if (league.league.indexOf('C') == -1 && league.league.indexOf('DFB') == -1) {
 					leagues.push({
-						name:league.name,
-						id: league.league_slug,
-						country: league.nation
+						name:league.caption,
+						id: league.id,
+						lastUpdated: league.lastUpdated
 					});
 				} 
 			})
@@ -152,6 +179,18 @@
 				}
 			})
 			return data;
+		}
+		
+		function parseTeamsData(data) {
+			var teams = [];
+			angular.forEach(data, function(team) {
+				teams.push({
+					name: team.name,
+					value: team.squadMarketValue,
+					flag: team.crestUrl
+				});
+			})
+			return teams;
 		}
 	}
 })();
