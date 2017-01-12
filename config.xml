@@ -8,7 +8,6 @@
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <icon src="football_117.png" height="117" width="117"/>
     <name>Football Standings Live</name>
-    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
     <tizen:privilege name="http://tizen.org/privilege/internet"/>
     <tizen:profile name="mobile"/>
     <tizen:setting screen-orientation="portrait" context-menu="enable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>

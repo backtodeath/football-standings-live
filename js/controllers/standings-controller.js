@@ -20,7 +20,7 @@
 		    
 	    document.addEventListener( 'tizenhwkey', buttonEvent );
 	    
-	    var listOfLeagues = 'http://api.football-data.org/v1/competitions';
+	    var listOfLeagues = 'http://api.football-data.org/v1/competitions/';
 	    var apiKey = {'X-Auth-Token': '8b096ed4da8e4dd0a9408ad7d2705022'}
 		
 		var refreshTimeDelay = 1000;
@@ -41,16 +41,16 @@
 		isInternet();
 		
 		var getLeagueStandingsUrl = function(leagueId){
-			return 'http://api.football-data.org/v1/competitions/'+ leagueId +'/leagueTable';
+			return listOfLeagues + leagueId +'/leagueTable';
 		}
 		
 		var getLeagueTeamsUrl = function(leagueId){
-			return 'http://api.football-data.org/v1/competitions/'+ leagueId +'/teams';
+			return listOfLeagues + leagueId +'/teams';
 		}
 	
 		function isInternet() {
 			dataService
-					.getData('http://api.football-data.org')
+					.getData(listOfLeagues)
 					.then(
 							function(dataResponse) {
 								if (dataResponse.status >= 200
@@ -77,6 +77,7 @@
 		}
 		
 		function getLeagues(){
+			$rootScope.loading = true;
 			$http({
 				method : "GET",
 				url : listOfLeagues,
@@ -87,11 +88,13 @@
 								var data = response.data;
 								$scope.leagues = parseLeagues(response.data);
 								$scope.netConnectivity = 0; // CONNECTED!
+								$rootScope.loading = false;
 							},
 							function myError(response) {
 								console
 										.log("ERROR STATUS = "
 												+ response.statusText);
+								$rootScope.loading = false;
 								$scope.netConnectivity = 1; // CONNECTION
 								// ERROR
 								continousLoad = setTimeout(
@@ -101,6 +104,7 @@
 		}
 		
 		$scope.getLeagueStandings = function(league){
+			$rootScope.loading = true;
 			$scope.currentLeague = league;
 			$http({
 				method : "GET",
@@ -113,6 +117,7 @@
 								$scope.scoreData = parseData(data);
 								$localStorage.scData = $scope.scoreData;
 								$scope.netConnectivity = 0; // CONNECTED!
+								$rootScope.loading = false;
 							},
 							function myError(response) {
 								console
@@ -120,6 +125,7 @@
 												+ response.statusText);
 								$scope.netConnectivity = 1; // CONNECTION
 								// ERROR
+								$rootScope.loading = false;
 								continousLoad = setTimeout(
 										getLeagues,
 										refreshTimeDelay);
@@ -127,6 +133,7 @@
 		}
 		
 		$scope.getLeagueTeams = function(league){
+			$rootScope.loading = true;
 			$scope.currentLeague = league;
 			$http({
 				method : "GET",
@@ -138,6 +145,7 @@
 								var data = response.data.teams;
 								$scope.teamData = parseTeamsData(data);
 								$scope.netConnectivity = 0; // CONNECTED!
+								$rootScope.loading = false;
 							},
 							function myError(response) {
 								console
@@ -145,6 +153,7 @@
 												+ response.statusText);
 								$scope.netConnectivity = 1; // CONNECTION
 								// ERROR
+								$rootScope.loading = false;
 								continousLoad = setTimeout(
 										getLeagues,
 										refreshTimeDelay);
