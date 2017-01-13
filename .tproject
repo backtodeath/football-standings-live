@@ -2,11 +2,39 @@
 <tproject xmlns="http://www.tizen.org/tproject">
     <platforms>
         <platform>
-            <name>mobile-2.4</name>
+            <name>mobile-2.3</name>
         </platform>
     </platforms>
     <package>
-        <blacklist/>
+        <blacklist>
+            <path value=".git" type="dir"/>
+            <path value=".git/FETCH_HEAD" type="file"/>
+            <path value=".git/HEAD" type="file"/>
+            <path value=".git/branches" type="dir"/>
+            <path value=".git/config" type="file"/>
+            <path value=".git/hooks" type="dir"/>
+            <path value=".git/index" type="file"/>
+            <path value=".git/logs" type="dir"/>
+            <path value=".git/logs/HEAD" type="file"/>
+            <path value=".git/logs/refs" type="dir"/>
+            <path value=".git/logs/refs/heads" type="dir"/>
+            <path value=".git/logs/refs/heads/master" type="file"/>
+            <path value=".git/logs/refs/remotes" type="dir"/>
+            <path value=".git/logs/refs/remotes/origin" type="dir"/>
+            <path value=".git/logs/refs/remotes/origin/master" type="file"/>
+            <path value=".git/objects" type="dir"/>
+            <path value=".git/objects/info" type="dir"/>
+            <path value=".git/objects/pack" type="dir"/>
+            <path value=".git/objects/pack/pack-b4211621ef783272af74db9b6358be4e8cea3a24.bitmap" type="file"/>
+            <path value=".git/objects/pack/pack-b4211621ef783272af74db9b6358be4e8cea3a24.idx" type="file"/>
+            <path value=".git/objects/pack/pack-b4211621ef783272af74db9b6358be4e8cea3a24.pack" type="file"/>
+            <path value=".git/packed-refs" type="file"/>
+            <path value=".git/refs" type="dir"/>
+            <path value=".git/refs/heads" type="dir"/>
+            <path value=".git/refs/remotes" type="dir"/>
+            <path value=".git/refs/remotes/origin" type="dir"/>
+            <path value=".git/refs/tags" type="dir"/>
+        </blacklist>
         <resFallback autoGen="true"/>
     </package>
 </tproject>
