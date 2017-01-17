@@ -11,6 +11,14 @@ html body {
     color: #000000;
 }
 
+.table td{
+	padding: 4px!important;
+}
+
+.standings-label{
+	padding-left: 50px!important;
+}
+
 .container-fluid {
      padding:5;
 }
