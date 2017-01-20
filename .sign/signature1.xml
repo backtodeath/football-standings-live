@@ -16,7 +16,7 @@
 </Reference>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>4KoEcxFXCF8UiVT4r3vsJtnh6HObqaeu1D5uOwdiEtw=</DigestValue>
+<DigestValue>+UGlxNeOdib8rSATrCqjdlD/dpJ/EbvCRzMsCJU9f+U=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -68,7 +68,7 @@
 </Reference>
 <Reference URI="js%2Fcontrollers%2Fstandings-controller.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>2ZJ8+/d4o8Ks8B0XT2lL5Qe+c8WcZOpgkW139RQELZ0=</DigestValue>
+<DigestValue>8UW0LKC6E2HpPH6fRqep/oJiiiP6XDZby59mMJ49P5w=</DigestValue>
 </Reference>
 <Reference URI="js%2Fservices%2Fdata-service.service.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -116,7 +116,7 @@
 </Reference>
 <Reference URI="teams.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>DnBEPWqeaMjamnNAvnUXDsvAShlU68/Unep2nIJF0v8=</DigestValue>
+<DigestValue>3i+Ln3Vqz4UrgLY8ZHIm9QAUnnBXDaZ8jydOO/Px8ZE=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -127,9 +127,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-Oqu1xi0utYTOSRTMLX2AkPL+wpXkci224W9SwuouEsR1XA2acbYLgs2xOP02M6phG+9NEsK0dtj5
-AfZozQS781gDCuJGwlQdPA7IWmYwUv7TyiNHfjCaDKxVU3NrcRdJ56Aym9hGM9+4zBHG4hPLJzgk
-tg1M5ItcTwwfvfXMxwk=
+fNvcJzmeUgBvvQAcO0CRzBadB2nnhOxGu0oJ0jtgYNPs7R3ZZ/c+kLVTAJW21gDvzMCeyxPhUUYn
+H+JO6oHr3hvoJLAaEXx0Y18QoC/OlW2Y/G/AZyxiRp+g32VPHHFknY8W2XOoQJpYsBwFiJsD7cq1
+AeHG+Dcomy3HjWHzydc=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

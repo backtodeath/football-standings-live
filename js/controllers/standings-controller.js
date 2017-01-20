@@ -196,10 +196,17 @@
 				teams.push({
 					name: team.name,
 					value: team.squadMarketValue,
-					flag: team.crestUrl
+					flag: parsedTeamFlag(team.crestUrl)
 				});
 			})
 			return teams;
+		}
+		
+		function parsedTeamFlag(value) {
+			if(value.indexOf('https') !== -1){
+				return 'No_image_available.png';
+			}
+			return value;
 		}
 	}
 })();

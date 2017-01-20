@@ -64,7 +64,7 @@
 </Reference>
 <Reference URI="js%2Fcontrollers%2Fstandings-controller.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>2ZJ8+/d4o8Ks8B0XT2lL5Qe+c8WcZOpgkW139RQELZ0=</DigestValue>
+<DigestValue>8UW0LKC6E2HpPH6fRqep/oJiiiP6XDZby59mMJ49P5w=</DigestValue>
 </Reference>
 <Reference URI="js%2Fservices%2Fdata-service.service.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -112,7 +112,7 @@
 </Reference>
 <Reference URI="teams.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>DnBEPWqeaMjamnNAvnUXDsvAShlU68/Unep2nIJF0v8=</DigestValue>
+<DigestValue>3i+Ln3Vqz4UrgLY8ZHIm9QAUnnBXDaZ8jydOO/Px8ZE=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -123,9 +123,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-NKH9COW6Fv/U8uFsAO6p7MwNSea11oV8xNAkUG2OmUm71SnGJ4UmHW25Dkk0db280WggRivIfsNZ
-DBou8+66oJe5k4ox3i8AtTTzNmIE7YFeDNT7WdTWZTRGoRBhuevclsgVktnVed3e1WL0DOYkbVdz
-+aJ/ldhdVYHjClzJAgo=
+LvrKRD8PB6v7BnZDZrUymQ3keFxibv3QJh4x08tUxkrgIKtIdN1lNjH2QnDNZJReeU+tuST0f/Uk
+2qP2ZtOdqM4hLkaetrbc2kJclefzecPe6ePWwJ5oUWSOSktdMionjwwaTh7Kc1ir6M+Z+fSxvByN
+LHpabguzMWkZP5uQfC4=
 </SignatureValue>
 <KeyInfo>
 <X509Data>
