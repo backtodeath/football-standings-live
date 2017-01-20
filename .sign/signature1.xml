@@ -2,6 +2,10 @@
 <SignedInfo>
 <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></CanonicalizationMethod>
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
+<Reference URI="No_image_available.png">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>1/Q+7iwJ47F1l0iAewgQrvPxsTVnOH92QuVj4LgxvA8=</DigestValue>
+</Reference>
 <Reference URI="angular-route_license.md">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>MU3EUGVQfGc+1th+nnf0KAS/qgtBORoO3Zp3v7iqdNU=</DigestValue>
@@ -12,11 +16,11 @@
 </Reference>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>6o22ygUKsvem8v8Yd6dSlY3vme3cXGv10QrqB4+JrIo=</DigestValue>
+<DigestValue>4KoEcxFXCF8UiVT4r3vsJtnh6HObqaeu1D5uOwdiEtw=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>eURk0KLN1+s0pZIKiNzVFBf1pNmBqXelVls44z2o3Es=</DigestValue>
+<DigestValue>UTRtR8UgE5X2Gz6SME1k3VMCuLuILXD3i0+xPLmvtP4=</DigestValue>
 </Reference>
 <Reference URI="css%2Fmobile-angular-ui-base.min.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -112,7 +116,7 @@
 </Reference>
 <Reference URI="teams.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>NYZOKolMjhER/fOUlnpePFg0nf7yDpa9leBKfLrfLOc=</DigestValue>
+<DigestValue>DnBEPWqeaMjamnNAvnUXDsvAShlU68/Unep2nIJF0v8=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -123,9 +127,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-rcyEBDihp2jih09xmJRF1RfiVMU/kp3CLc6hiFCyPAXirqhafSOnwlYyDo0b1FsfFzm5R0bssMLD
-cOZAyAzna6oNrRlcBmcApdzvKooGmtWrKgRqQpqt3zy3UnljOH+4NI3rwEWJErgsB6lvtad5ZSV6
-w/jL2rAJ5Q4YKc4ODzk=
+Oqu1xi0utYTOSRTMLX2AkPL+wpXkci224W9SwuouEsR1XA2acbYLgs2xOP02M6phG+9NEsK0dtj5
+AfZozQS781gDCuJGwlQdPA7IWmYwUv7TyiNHfjCaDKxVU3NrcRdJ56Aym9hGM9+4zBHG4hPLJzgk
+tg1M5ItcTwwfvfXMxwk=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

@@ -11,9 +11,10 @@
 			</thead>
 			<tbody>
 				<tr ng-repeat="team in teamData">
-					<td><img height='30' width='30' ng-src="{{team.flag}}"/></td>
+					<td><img height='40' width='40' ng-src="{{team.flag}}" onerror="this.src='No_image_available.png'"/></td>
 					<td>{{team.name}}</td>
-					<td>{{team.value}}</td>
+					<td ng-if="team.value">{{team.value}}</td>
+					<td ng-if="!team.value">---</td>
 				</tr>
 			</tbody>
 		</table>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/footballStandingsLive" version="1.0.1" viewmodes="fullscreen">
-    <access origin="http://api.football-data.org" subdomains="true"></access>
-    <access origin="http://upload.wikimedia.org" subdomains="true"></access>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/footballStandingsLive" version="1.0.1" viewmodes="fullscreen">
+    <access origin="http://api.football-data.org" subdomains="true"/>
+    <access origin="http://upload.wikimedia.org" subdomains="true"/>
+    <access origin="https://upload.wikimedia.org" subdomains="true"/>
     <tizen:application id="vrJQbodX5w.FootballStandingsLive" package="vrJQbodX5w" required_version="2.3"/>
     <author email="lirolaluis@gmail.com">Luis Lirola</author>
     <content src="index.html"/>

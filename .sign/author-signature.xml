@@ -2,6 +2,10 @@
 <SignedInfo>
 <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></CanonicalizationMethod>
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
+<Reference URI="No_image_available.png">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>1/Q+7iwJ47F1l0iAewgQrvPxsTVnOH92QuVj4LgxvA8=</DigestValue>
+</Reference>
 <Reference URI="angular-route_license.md">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>MU3EUGVQfGc+1th+nnf0KAS/qgtBORoO3Zp3v7iqdNU=</DigestValue>
@@ -12,7 +16,7 @@
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>eURk0KLN1+s0pZIKiNzVFBf1pNmBqXelVls44z2o3Es=</DigestValue>
+<DigestValue>UTRtR8UgE5X2Gz6SME1k3VMCuLuILXD3i0+xPLmvtP4=</DigestValue>
 </Reference>
 <Reference URI="css%2Fmobile-angular-ui-base.min.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -108,7 +112,7 @@
 </Reference>
 <Reference URI="teams.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>NYZOKolMjhER/fOUlnpePFg0nf7yDpa9leBKfLrfLOc=</DigestValue>
+<DigestValue>DnBEPWqeaMjamnNAvnUXDsvAShlU68/Unep2nIJF0v8=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -119,9 +123,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-rvI5ROie/XnS/r7dP2e9MSjGQKTfadANl+9EFtQVyFMI4hlj77s0/UGE+dRnRhxEQwEAdiGPPo99
-8wWEMiR7464KLDOLZ7Ph0Og5XMbW1ZmfNeuBRpM6DMCV15zS/BeT0h2JRUxopiZniPQvKLE1Nsnr
-i5hJTDgPLy//xCvdsJ8=
+NKH9COW6Fv/U8uFsAO6p7MwNSea11oV8xNAkUG2OmUm71SnGJ4UmHW25Dkk0db280WggRivIfsNZ
+DBou8+66oJe5k4ox3i8AtTTzNmIE7YFeDNT7WdTWZTRGoRBhuevclsgVktnVed3e1WL0DOYkbVdz
++aJ/ldhdVYHjClzJAgo=
 </SignatureValue>
 <KeyInfo>
 <X509Data>
