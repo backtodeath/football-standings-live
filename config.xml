@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/footballStandingsLive" version="1.0.1" viewmodes="fullscreen">
-    <access origin="http://api.football-data.org" subdomains="true"/>
-    <access origin="http://upload.wikimedia.org" subdomains="true"/>
-    <access origin="https://upload.wikimedia.org" subdomains="true"/>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/footballStandingsLive" version="1.0.1" viewmodes="fullscreen">
+    <access origin="http://api.football-data.org" subdomains="true"></access>
+    <access origin="http://upload.wikimedia.org" subdomains="true"></access>
+    <access origin="https://upload.wikimedia.org" subdomains="true"></access>
     <tizen:application id="vrJQbodX5w.FootballStandingsLive" package="vrJQbodX5w" required_version="2.3"/>
     <author email="lirolaluis@gmail.com">Luis Lirola</author>
     <content src="index.html"/>
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <icon src="football_117.png" height="117" width="117"/>
     <name>Football Standings Live</name>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
     <tizen:privilege name="http://tizen.org/privilege/internet"/>
     <tizen:profile name="mobile"/>
     <tizen:setting screen-orientation="portrait" context-menu="enable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>

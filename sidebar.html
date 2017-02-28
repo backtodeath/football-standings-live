@@ -1,7 +1,6 @@
 <div class="scrollable">
-  <h1 class="scrollable-header app-name">Designed by Lirola Luis</h1>
+  <h1 class="scrollable-header app-name">Leagues:</h1>
   <div class="scrollable-content">
-    <span class="years-label">Leagues:</span>
     <div class="panel-group" 
         ui-shared-state="myAccordion">
     <div class="panel menu-items" ng-class="{'active-league' : league.name == currentLeague.name}" ng-repeat="league in leagues">
@@ -26,3 +25,4 @@
      </div>
   </div>
 </div>
+ <a href="" class="btn btn-primary more-apps-btn" ng-click="getApps()">More cool apps</a>

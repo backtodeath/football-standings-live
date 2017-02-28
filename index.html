@@ -20,6 +20,7 @@
 </head>
 <body ui-prevent-touchmove-defaults
 	ng-controller="StandingsController">
+	<div ui-yield-to="modals"></div>
 	<!-- Sidebars -->
 	<div ng-include="'sidebar.html'" ui-track-as-search-param="true"
 		class="sidebar sidebar-left"></div>

@@ -16,11 +16,15 @@
 </Reference>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>+UGlxNeOdib8rSATrCqjdlD/dpJ/EbvCRzMsCJU9f+U=</DigestValue>
+<DigestValue>ZcHaJSEYY+AKdfwYKr80p1HOiFWM6MQt31A3mIMQAMk=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>UTRtR8UgE5X2Gz6SME1k3VMCuLuILXD3i0+xPLmvtP4=</DigestValue>
+<DigestValue>p7jFBlrFDpV5C0Qj7QRhJs+rgtRls7m3nHDiflTrYss=</DigestValue>
+</Reference>
+<Reference URI="css%2Fbootstrap.min.css">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc=</DigestValue>
 </Reference>
 <Reference URI="css%2Fmobile-angular-ui-base.min.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -28,7 +32,7 @@
 </Reference>
 <Reference URI="css%2Fstyle.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>IKPJqx+IVY4E/8SyPUT/s/60+uHt5cB2QH6FBvJPpYw=</DigestValue>
+<DigestValue>kXPZ0EHXPnygr9g9D77czOc95Ks8Iugxn9SA03mx/pw=</DigestValue>
 </Reference>
 <Reference URI="fonts%2Ffontawesome-webfont.eot">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -56,11 +60,11 @@
 </Reference>
 <Reference URI="home.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>4ce9RvqjS6S1+2W4iPuZYV3VAV2qnkpXL69ZZDqKDaI=</DigestValue>
+<DigestValue>8IJLKoYr4GricMRgBQ0fFJqASmqsnQqHm+O6JCKjCys=</DigestValue>
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>lJMeRLZJDtCLE9RQSZb0RXtxXOiZhlU358SOWGtfUmY=</DigestValue>
+<DigestValue>oD0t4h5qpv1KAmPm7ODt7nCIHW4JK93sapBXPN0ZTQ0=</DigestValue>
 </Reference>
 <Reference URI="js%2Fapp.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -68,7 +72,7 @@
 </Reference>
 <Reference URI="js%2Fcontrollers%2Fstandings-controller.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>8UW0LKC6E2HpPH6fRqep/oJiiiP6XDZby59mMJ49P5w=</DigestValue>
+<DigestValue>orpOswmcFP50Lf8Q66GYOgiq50noRlMtFV/YjPC9mzA=</DigestValue>
 </Reference>
 <Reference URI="js%2Fservices%2Fdata-service.service.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -108,7 +112,7 @@
 </Reference>
 <Reference URI="sidebar.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>bMGW4dsLKmn6gZ0icQJhgGJPGha8vJxoDzA8U6SowgA=</DigestValue>
+<DigestValue>oSaPL7twMPgWg0+ah68ybB1Wj9Q+HmmP+q5atdBF3os=</DigestValue>
 </Reference>
 <Reference URI="standings.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -127,9 +131,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-fNvcJzmeUgBvvQAcO0CRzBadB2nnhOxGu0oJ0jtgYNPs7R3ZZ/c+kLVTAJW21gDvzMCeyxPhUUYn
-H+JO6oHr3hvoJLAaEXx0Y18QoC/OlW2Y/G/AZyxiRp+g32VPHHFknY8W2XOoQJpYsBwFiJsD7cq1
-AeHG+Dcomy3HjWHzydc=
+SStVaCiWU4VuuYFee7do2AY5iIB3D5Mbbb+GLXKM8trDT8CUCFNXycNa0A9cD3rGlrWf7t3RuIga
+0BVebgHQIIcvKltAvu/0R2Gj8AVLuQ7Pfvribj04mjXNBgqUcXxvNYDuld+yePpqMovGrFmq64nO
+cyllV0aF/eC1H8pAlN8=
 </SignatureValue>
 <KeyInfo>
 <X509Data>
