@@ -33,9 +33,8 @@
 
 		var buttonEvent = function(e) {
 			if (e.keyName == "back") {
-				console.log('asd');
 				$timeout(function (){
-			        $rootScope.Ui.toggle('myModal');
+			        $rootScope.Ui.turnOn('myModal');
 			    }, 100);
 			}
 			if (e.keyName == "menu") {
@@ -69,10 +68,6 @@
 
 		var getLeagueStandingsUrl = function(leagueId) {
 			return listOfLeagues + leagueId + '/leagueTable';
-		}
-
-		var getLeagueTeamsUrl = function(leagueId) {
-			return listOfLeagues + leagueId + '/teams';
 		}
 
 		function isInternet() {
@@ -144,27 +139,6 @@
 			});
 		}
 
-		$scope.getLeagueTeams = function(league) {
-			$rootScope.loading = true;
-			$scope.currentLeague = league;
-			$http({
-				method : "GET",
-				url : getLeagueTeamsUrl(league.id),
-				headers : apiKey
-			}).then(function mySucces(response) {
-				var data = response.data.teams;
-				$scope.teamData = parseTeamsData(data);
-				$scope.netConnectivity = 0; // CONNECTED!
-				$rootScope.loading = false;
-			}, function myError(response) {
-				console.log("ERROR STATUS = " + response.statusText);
-				$scope.netConnectivity = 1; // CONNECTION
-				// ERROR
-				$rootScope.loading = false;
-				continousLoad = setTimeout(getLeagues, refreshTimeDelay);
-			});
-		}
-
 		function parseLeagues(data) {
 			var leagues = [];
 			angular.forEach(data, function(league) {
@@ -193,25 +167,6 @@
 				}
 			})
 			return data;
-		}
-
-		function parseTeamsData(data) {
-			var teams = [];
-			angular.forEach(data, function(team) {
-				teams.push({
-					name : team.name,
-					value : team.squadMarketValue,
-					flag : parsedTeamFlag(team.crestUrl)
-				});
-			})
-			return teams;
-		}
-
-		function parsedTeamFlag(value) {
-			if (value.indexOf('https') !== -1) {
-				return 'No_image_available.png';
-			}
-			return value;
 		}
 	}
 })();
